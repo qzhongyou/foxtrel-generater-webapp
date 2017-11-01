@@ -1,0 +1,14 @@
+{
+  "name": "foxtrel-generater-webapp",
+  "version": "0.0.3",
+  "description": "generater模板使用webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
