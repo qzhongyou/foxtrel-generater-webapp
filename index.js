@@ -38,4 +38,15 @@ ces.prototype.prompting = function (next) {
     })
 }
 
+
+
+ces.prototype.writing = function () {
+    var me = this;
+    //拷贝整个文件
+    me.copy(me.templatePath("**"), me.destinationPath("/"));
+    me.copy(me.templatePath(".babelrc"), me.destinationPath(".babelrc"));
+    me.copy(me.templatePath(".eslintrc"), me.destinationPath(".eslintrc"));
+
+}
+
 module.exports = ces;

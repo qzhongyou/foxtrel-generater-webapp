@@ -1,6 +1,6 @@
 {
   "name": "foxtrel-generater-webapp",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "generater模板使用webapp",
   "main": "index.js",
   "scripts": {
