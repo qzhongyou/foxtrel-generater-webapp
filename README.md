@@ -34,17 +34,17 @@ ces.prototype.writing = function () {
 
 ### 可用属性及函数说明
 
-* this.props
-默认提供 `projectName`,`author`,`authorEmail`等基础信息。
-* templatePath
-参数: String 入口文件
-模板入口文件路径,根路径默认为`process.cwd()`,根据`foxtrel install -r <path>`可自定义根路径。
-* destinationPath
-参数: String 出口文件
-模板输出文件路径,根路径同上。
-* copy
-参数: 入口文件路径 / 出口文件路径
-文件拷贝
+* this.props    
+默认提供 `projectName`,`author`,`authorEmail`等基础信息。    
+* templatePath   
+参数: String 入口文件   
+模板入口文件路径,根路径默认为`process.cwd()`,根据`foxtrel install -r <path>`可自定义根路径。    
+* destinationPath       
+参数: String 出口文件       
+模板输出文件路径,根路径同上。  
+* copy      
+参数: 入口文件路径 / 出口文件路径     
+文件拷贝  
  
 
 
