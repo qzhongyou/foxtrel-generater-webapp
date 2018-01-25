@@ -1,14 +1,22 @@
 {
   "name": "foxtrel-generater-webapp",
-  "version": "0.0.8",
-  "description": "generater模板使用webapp",
+  "version": "0.1.0",
+  "description": "脚手架模板",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/qzhongyou/foxtrel-generater-webapp.git"
+  },
+  "keywords": [
+    "foxtrel",
+    "generater"
+  ],
   "dependencies": {
     "inquirer": "^3.3.0"
   },
-  "author": "",
+  "author": "玉面",
   "license": "ISC"
 }
