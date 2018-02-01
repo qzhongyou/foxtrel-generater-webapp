@@ -1,6 +1,5 @@
-import path from 'path';
 export default {
-    port: 3110,
-    static: path.join(process.cwd(), 'dist')
+    port: foxtrel.config.get('port'),
+    static: foxtrel.config.get('outputPath') + '/static',
+    page: foxtrel.config.get('outputPath') + '/page',
 }
-

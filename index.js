@@ -6,12 +6,12 @@
 
 'use strict';
 
-var inquirer = require('inquirer');
+const inquirer = require('inquirer');
 
-var ces = function () {};
+let ces = function () {};
 
 ces.prototype.prompting = function (next) {
-    var me = this, prompts = [];
+    let me = this, prompts = [];
     prompts.push({
         type: 'input',
         name: 'projectName',
@@ -41,12 +41,23 @@ ces.prototype.prompting = function (next) {
 
 
 ces.prototype.writing = function () {
-    var me = this;
-    //拷贝整个文件
-    me.copy(me.templatePath("**"), me.destinationPath("/"));
-    me.copy(me.templatePath(".babelrc"), me.destinationPath(".babelrc"));
-    me.copy(me.templatePath(".eslintrc"), me.destinationPath(".eslintrc"));
 
+    let path = [
+        {"views/**": "app/views/"},
+        {"server/**": "app/"},
+        {"\*\*.js":"\/"},
+        {"\*\*.json":"\/"},
+        {"\.babelrc": "\.babelrc"},
+        {"\.eslintrc": "\.eslintrc"}
+    ];
+
+    for (let item of path) {
+        for (let key in item) {
+            if (item.hasOwnProperty(key)) {
+                this.copy(this.templatePath(key), this.destinationPath(item[key]));
+            }
+        }
+    }
 }
 
 module.exports = ces;
