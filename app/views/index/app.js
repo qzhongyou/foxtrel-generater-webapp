@@ -1,2 +1,2 @@
-import abc from './abc';
+import abc from './abc.less';
 console.log(abc.class);
